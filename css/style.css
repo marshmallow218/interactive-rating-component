@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  height: 100vh;
+  background-color: hsl(216, 12%, 8%);
+}
+body .button, body .rating-state .state__submit-btn, .rating-state body .state__submit-btn, body .rating-state .state__rating-btns button, .rating-state .state__rating-btns body button {
+  font-family: "Overpass", sans-serif;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+body .grid, body .thank-you-state .state__thank-you-img, .thank-you-state body .state__thank-you-img, body .rating-state .state__rating-btns button, .rating-state .state__rating-btns body button, body .rating-state .state__star-img, .rating-state body .state__star-img {
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 350px;
+  padding: 1.5rem;
+  border-radius: 20px;
+  background-color: hsl(213, 19%, 18%);
+}
+.container .state__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 0.5em;
+}
+.container .state__subtitle {
+  font-size: 0.9375rem;
+  color: hsl(216, 12%, 54%);
+  line-height: 1.5;
+  margin-bottom: 1.5em;
+}
+
+.rating-state .state__star-img {
+  height: 40px;
+  width: 40px;
+  margin-bottom: 1em;
+  border-radius: 50%;
+  background-color: #3a4655;
+}
+.rating-state .state__star-img img {
+  height: 14px;
+  width: 14px;
+}
+.rating-state .state__rating-btns {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5em;
+}
+.rating-state .state__rating-btns button {
+  height: 40px;
+  width: 40px;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: hsl(216, 12%, 54%);
+  border-radius: 50%;
+  background-color: #3a4655;
+}
+.rating-state .state__rating-btns button:hover {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(25, 97%, 53%);
+}
+.rating-state .state__rating-btns .selected {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(217, 12%, 63%);
+}
+.rating-state .state__submit-btn {
+  font-size: 0.9375rem;
+  width: 100%;
+  color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 0.8em 1em;
+  border-radius: 100px;
+  background-color: hsl(25, 97%, 53%);
+}
+.rating-state .state__submit-btn:hover {
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+.thank-you-state {
+  display: none;
+  text-align: center;
+}
+.thank-you-state .state__thank-you-img {
+  margin-bottom: 1.5em;
+}
+.thank-you-state .state__thank-you-img img {
+  height: 90px;
+}
+.thank-you-state .state__msg {
+  display: inline-block;
+  font-size: 0.9375rem;
+  color: hsl(25, 97%, 53%);
+  margin-bottom: 2em;
+  padding: 0.5em 1em;
+  border-radius: 100px;
+  background-color: #3a4655;
+}
+
+/*# sourceMappingURL=style.css.map */
